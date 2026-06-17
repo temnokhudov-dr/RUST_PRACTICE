@@ -16,3 +16,14 @@ pub fn read_input_num<T: FromStr>() -> Result<T, T::Err> {
         .expect("Не удалось прочитать ввод");
     return input.trim().parse();
 }
+
+// Определение количества знаков после запятой для числа с плавающей точкой
+pub fn def_decimal_precision(num: f64) -> usize {
+    let s = num.to_string();
+    if let Some(pos) = s.find('.') {
+        s[pos + 1..].len()
+    } else {
+        0
+    }
+}
+
