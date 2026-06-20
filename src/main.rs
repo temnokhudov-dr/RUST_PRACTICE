@@ -8,6 +8,8 @@ mod bubble_sorting;
 
 mod calculator;
 
+mod stack;
+
 fn main() {
     // #1
     // guess_game::start_game();
