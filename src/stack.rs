@@ -100,7 +100,7 @@ impl Bracketer {
         
         // После проверки всех символов стек должен быть пустым
         if !stack.is_empty() {
-            println!("Ошибка: остались незакрытые скобки ({} шт.)", stack.len());
+            println!("Ошибка: остались незакрытые скобки: {}", stack.elements.iter().collect::<String>());
             return false;
         }
         

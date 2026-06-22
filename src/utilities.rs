@@ -1,6 +1,9 @@
+#![warn(clippy::all, clippy::pedantic)]
+
 use std::io;
 use std::str::FromStr;
 
+// Чтение ввода и преобразование в тип T
 pub fn read_input_string() -> String {
     let mut input = String::new();
     io::stdin()
@@ -9,6 +12,7 @@ pub fn read_input_string() -> String {
     return input.trim().to_string();
 }
 
+// Чтение ввода и преобразование в тип T
 pub fn read_input_num<T: FromStr>() -> Result<T, T::Err> {
     let mut input = String::new(); 
     io::stdin()
@@ -25,5 +29,10 @@ pub fn def_decimal_precision(num: f64) -> usize {
     } else {
         0
     }
+}
+
+// Преобразование строки в f64
+pub fn str_to_num(str: &str) -> f64 {
+    str.trim().parse::<f64>().expect("Please type a number!")
 }
 
