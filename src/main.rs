@@ -1,4 +1,5 @@
 use std::io;
+
 mod utilities; // Объявляем модули на уровне крейта
 mod temp_converter;
 mod guess_game; 
@@ -10,6 +11,13 @@ mod calculator;
 
 mod stack;
 mod queue;
+
+mod counter;
+mod hexagon_2D;
+mod hexagon_3D;
+mod hexagon_3D_v2; 
+
+
 
 fn main() {
     //====================================//
@@ -69,6 +77,9 @@ fn main() {
     bg.execute();
     */
 
-
+    // counter::run_counter();
+    // hexagon_2D::run_polygon();
+    // hexagon_3D::run_polygon();
+    hexagon_3D_v2::run_3d_parametric();
 
 }
