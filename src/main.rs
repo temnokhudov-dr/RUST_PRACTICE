@@ -17,6 +17,7 @@ mod hexagon_2D;
 mod hexagon_3D;
 mod hexagon_3D_v2; 
 
+mod screen_app;
 
 
 fn main() {
@@ -58,6 +59,10 @@ fn main() {
     }
     */
     
+
+    //====================================//
+    //                 #5                 //
+    //====================================//
     /* 
     print!("Введите число: ");
     io::Write::flush(&mut io::stdout()).unwrap();
@@ -77,9 +82,22 @@ fn main() {
     bg.execute();
     */
 
+
+    //====================================//
+    //                 #6                 //
+    //====================================//
     // counter::run_counter();
     // hexagon_2D::run_polygon();
     // hexagon_3D::run_polygon();
-    hexagon_3D_v2::run_3d_parametric();
+    // hexagon_3D_v2::run_3d_parametric();
+
+
+    //====================================//
+    //                 #7                 //
+    //====================================//
+    screen_app::run_screen_app();   
+
+    
+
 
 }

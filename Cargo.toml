@@ -1,7 +1,11 @@
 [package]
-name = "new_project"
+name = "rust_practice"
 version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-eframe = "0.24"
+chrono = "0.4.45"
+eframe = "0.24.0"
+rdev = {version = "0.5.3", features = ["unstable_grab"]}
+screenshots = "0.8.10"
+
